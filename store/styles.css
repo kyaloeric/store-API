@@ -56,16 +56,26 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .product img {
     max-width: 40%;
     display: flex;
     align-items: center;
+    max-height: 80px;
+    cursor:pointer;
+    justify-content: center;
+    /* max-width: 7px; */
 }
 
 .product h3 {
-    font-size: 20px;
+    font-size: 15px;
     margin: 10px 0;
 }
 
@@ -140,3 +150,17 @@ main {
     flex-wrap: wrap;
 }
 
+
+
+/* CSS for the modal */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}

@@ -26,11 +26,25 @@
         <div class="products"></div>
     </main>
     <div class="cart">
-        <h2>Cart</h2>
+        <h2>Your Cart</h2>
         <ul id="cart-items"></ul>
-        <div class="cart-total">Grand Total: $<span id="grand-total">0.00</span></div>
+        <p>Total: $<span id="grand-total">0.00</span></p>
         <button id="clear-cart">Clear Cart</button>
     </div>
+
+    <!-- Add a modal container -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+            <button class="add-to-cart" id="modal-add-to-cart" data-id=""></button>
+        </div>
+    </div>
+
+    
     <script src="main.js"></script>
 </body>
 </html>

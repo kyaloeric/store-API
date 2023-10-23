@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>E-commerce Store</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Rics Store</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a>
+                    <select id="category">
+                        <option value="">All Categories</option>
+                    </select>
+                </li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Cart</a> <span id="cart-count">0</span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="products"></div>
+    </main>
+    <div class="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <div class="cart-total">Grand Total: $<span id="grand-total">0.00</span></div>
+        <button id="clear-cart">Clear Cart</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
